@@ -1,1 +1,60 @@
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&src=NzVlOWUyZjczYzJlZDQwYjhjNGNiNDRmYjFjYjNiMzRkMzQ1ODhkNWU4ODYxMTI0MDg0MDVlNzQ5YmVjYjQyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23d50000" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Stylish Google Calendar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Kanit', sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calendar-container {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      border: 2px solid #ffd54f;
+      max-width: 90vw;
+      max-height: 90vh;
+    }
+
+    .calendar-container h1 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #d50000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      iframe {
+        height: 500px;
+      }
+      .calendar-container h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calendar-container">
+    <h1>ตารางกิจกรรมของฉัน</h1>
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FBangkok&showPrint=0&src=N
